@@ -45,6 +45,6 @@ class MyApp extends InheritedWidget {
   }
 
   static MyApp of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(MyApp);
+    return context.dependOnInheritedWidgetOfExactType<MyApp>();
   }
 }
